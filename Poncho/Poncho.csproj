@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Avatar.png" />
+    <None Remove="MenuIcon.png" />
+    <None Remove="Wallpaper.jpg" />
+    <None Remove="Wallpaper.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Avatar.png" />
+    <EmbeddedResource Include="MenuIcon.png" />
+    <EmbeddedResource Include="Wallpaper.jpg" />
+    <EmbeddedResource Include="Wallpaper.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
